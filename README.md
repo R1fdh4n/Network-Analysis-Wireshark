@@ -41,3 +41,21 @@ Ref 2: Identity_Trail.pcap file is opened using Wiresark
  -To get desired results that we are looking for wireshark uses filters. By understanding of the TCP/IP or OSI conceptual communication model and ports and protocols, it is done. Every communication leaves the trace of network traffic.
  Some wireshark filters from the official documentation, https://www.wireshark.org/docs/man-pages/wireshark-filter.html
 
+### Step 3: Find the identity trail 
+  -One of the most common wireshark filter is 'tcp.port == 80' is to filter out only the tcp (transmission control protocol) with port 80 (port 80 is the default insecure port for http [Hyper tex transfer protocol] which insecure web communication that is not encrpted).
+  #### A man-in-the-middle (MITM) attack is a form of cyberattack in which criminals exploiting weak web-based protocols insert themselves between entities in a communication channel to steal data. Estimates show that 35% of exploitation activity involves man-in-the-middle attacks.
+
+-Look at the packet number 77, there is a hint, a conversation going on.
+![Screenshot 2024-08-22 225648](https://github.com/user-attachments/assets/eee69fcf-a9b5-495a-bec1-f6b9609824ac)
+Ref 3: Got a hint
+ -Right click on the packet and then click on the 'Follow' option and then click on the 'TCP stream' option this procedure gives the similar output based on the packet number 77, which is very helpful scenarios like this.
+ 
+ -The result is, got the complete conversation between the users. 
+ ### The confidentiality of the CIA triad (Confidentiality, Integrity and Availability) is compromised here.
+
+ ![Screenshot (352)](https://github.com/user-attachments/assets/1babfbab-c819-4a56-910c-6c3f55affda1)
+ Ref 4: Got it !
+
+ #### The CTF mission was to find the identity/name of the user. Name of the user is Sajith. 
+The protocol that can be seen in the convsersation is Telent. TELNET stands for Teletype Network. It is a client/server application protocol that provides access to virtual terminals of remote systems on local area networks or the Internet. The local computer uses a telnet client program and the remote computers use a telnet server program. Telnet will use port 23 by default.
+
