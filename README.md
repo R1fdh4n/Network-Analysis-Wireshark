@@ -29,3 +29,4 @@ This lab focuses on building skills in network analysis using Wireshark by captu
 -What is Wireshark? 
   Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education. It is in-built applcation in Kali Linux.
   For other Operating Systems use, https://www.wireshark.org/download.html
+- Identity_Trail.pcap is the .pcap (Packet capture) that is to be analysed for Identifying the missing person name. It is uploaded in the files above section
