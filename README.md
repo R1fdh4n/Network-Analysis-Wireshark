@@ -1,5 +1,8 @@
 # Network-Analysis-Wireshark
 
+In the first part of this project I will be analysing a .pcap file from a CTF(Capture The Flag) that I participated and the CTF is conducted by RedTeam Hacker Academy, Kochi. In the second part I will capture the network traffic between the Kali linux (attacker machine) and the metasploitable 2 machine (target machine) that has been configured from the previous project.
+
+
 ## Objective
 
 This lab focuses on building skills in network analysis using Wireshark by capturing and analyzing traffic in a controlled environment. It aims to provide practical experience in understanding protocols, detecting security threats, and investigating network-based attacks, enhancing expertise in traffic inspection and network security monitoring.
@@ -15,17 +18,14 @@ This lab focuses on building skills in network analysis using Wireshark by captu
 - **Network Security Monitoring:** Monitor network traffic for potential threats and suspicious activity.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- **Wireshark:** For capturing and analyzing network traffic.
+- **Kali Linux:** For generating network traffic and simulating attacks.
+- **Metasploitable 2:** A vulnerable virtual machine used as a target for traffic analysis.
+- **tcpdump:** A command-line tool for capturing network packets before analyzing them in Wireshark.
 
 ## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
-
-Every screenshot should have some text explaining what the screenshot is about.
-
-Example below.
-
-*Ref 1: Network Diagram*
+### Step 1: Download and open the .pcap file into wireshark
+-What is Wireshark? 
+  Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education. It is in-built applcation in Kali Linux.
+  For other Operating Systems use, https://www.wireshark.org/download.html
